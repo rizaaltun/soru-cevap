@@ -1,0 +1,7 @@
+MÜHRÜN İZİNDE — 10 SORULUK MOBİL OYUN
+
+Başlatma: index.html dosyasını tarayıcıda açın. Yayınlamak için bu klasördeki index.html, game.js ve assets klasörünü birlikte HTTPS sunucuya yükleyin. QR kodu yüklenen index.html adresine yönlendirin.
+
+10 soru x 10 puan; süre sınırı yok. Doğru cevaba bir kez puan verilir. Oyunun bütün görünen yazıları görsel üretimiyle hazırlanmış ekranlarda bulunur. Kod yalnızca etkileşimi, puanı ve ekrandaki görselleri yönetir.
+
+Kaynak yanıt sırası: B A B C A B C A B C.
