@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#204d55">
+  <title>Mührün İzinde | 10 Soruluk Oyun</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#204d55}
+    body{display:grid;place-items:center}
+    #screen{position:relative;width:min(100vw,calc(100dvh * 941 / 1672));aspect-ratio:941 / 1672;max-height:100dvh;overflow:hidden;touch-action:manipulation}
+    #art{display:block;width:100%;height:100%;user-select:none;-webkit-user-drag:none}
+    button{position:absolute;border:0;background:transparent;color:transparent;font-size:0;cursor:pointer;padding:0;-webkit-tap-highlight-color:transparent}
+    button:focus-visible{outline:3px solid #fff;outline-offset:-3px;border-radius:12px}
+    .choice{left:14%;width:72%;height:6.15%}
+    #a{top:35.3%}#b{top:42.15%}#c{top:49.1%}
+    #action{left:25%;width:50%;top:61.5%;height:6.7%}
+    #replay{left:21%;width:58%;top:87.4%;height:8.4%}
+    #feedback{position:absolute;left:29%;top:55.8%;width:42%;height:6.5%;object-fit:contain;pointer-events:none}
+    [hidden]{display:none!important}
+    #status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  </style>
+</head>
+<body>
+  <main id="screen" aria-label="Mührün İzinde oyunu">
+    <img id="art" src="assets/start.webp" alt="Mührün İzinde başlangıç ekranı" draggable="false">
+    <button id="a" class="choice" aria-label="A seçeneği" hidden></button>
+    <button id="b" class="choice" aria-label="B seçeneği" hidden></button>
+    <button id="c" class="choice" aria-label="C seçeneği" hidden></button>
+    <img id="feedback" alt="" hidden>
+    <button id="action" aria-label="Oyuna başla"></button>
+    <button id="replay" aria-label="Yeniden oyna" hidden></button>
+    <span id="status" role="status" aria-live="polite"></span>
+  </main>
+  <script src="game.js" defer></script>
+</body>
+</html>
